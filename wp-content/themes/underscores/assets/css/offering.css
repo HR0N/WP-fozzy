@@ -1,0 +1,227 @@
+.offering, .offers-wrapper{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 20px;
+}
+.offers-wrapper h2{
+    border-bottom: 1px solid white;
+}
+.offers-wrapper h5{
+    color: white;
+    margin-bottom: 6px;
+}
+.offer{
+    padding: 10px;
+    /*box-shadow: 2px 2px 5px grey;*/
+    /*border-radius: .25rem;*/
+    height: fit-content;
+    border: 1px solid white;
+}
+.best-offers__main, .unlimited-offers__main{
+    justify-items: center;
+    display: grid;
+    justify-content: space-evenly;
+    column-gap: 12px;
+    row-gap: 22px;
+}
+.unlimited-offers__main{
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+.contract {
+    position: relative;
+    display: inline-grid;
+    row-gap: 10px;
+    text-align: center;
+    align-content: start;
+    min-width: 217px;
+    max-width: 320px;
+    min-height: 264px;
+    background-color: white;
+    padding-bottom: 65px;
+    color: black;
+}
+.contract > div{
+    padding: 0 5px;
+}
+.contract .title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(0,58,104);
+    padding: 3px 0;
+    height: 36px;
+}
+.contract__ifActive{display: none}
+.contract-active{
+    box-shadow: 0 5px 10px #1f1f1f;
+}
+.offers-wrapper .contract-active .bbtn{
+    color: white;
+    background-color: rgb(0,58,104);
+}
+.offers-wrapper .contract-active .bbtn:hover{
+    color: white;
+    background-color: rgb(0, 40, 77);
+}
+.contract-active .contract__ifActive{display: block}
+.contract .btn{
+    width: 120px;
+    margin: 0 auto;
+}
+.best-offers__footer, .unlimited-offers__footer{
+    margin-top: 20px;
+}
+
+.best-offers__footer span, .unlimited-offers__footer span{
+    color: red;
+}
+.offers-wrapper .modal{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.8);
+    display: none;
+}
+.offers-wrapper .modal .modal__main{
+    color: black;
+    position: relative;
+    width: 90%;
+    min-width: 300px;
+    height: 90%;
+    top: 8%;
+    margin: 0 auto;
+    padding: 2%;
+    border: 1px solid dimgray;
+    border-radius: .25rem;
+    background-color: whitesmoke;
+}
+.offers-wrapper .modal .buttons{
+    margin-top: 30px;
+    display: grid;
+    grid-template: min-content / auto auto;
+    justify-content: space-between;
+}
+.offers-wrapper .modal.active{
+    display: block;
+    animation: open_modal .4s;
+}
+.modal__main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.interface{
+    display: none;
+    padding: 2px;
+    box-shadow: 0 0 3px lightgrey;
+}
+.interface2 .interface2__bill{
+    background-color: rgba(100, 149, 237, 0.1);
+    min-width: 200px;
+}
+.interface2 .interface2__bill div:nth-child(odd){
+
+}
+.modal__main .interface1{
+    display: none;
+    grid-template:
+            [start] "label deposit_amount" min-content [row2]
+            [row2] "contract_info contract_info" min-content [row3]
+            [row3] "buttons buttons" 80px [row-end] / auto 1fr;
+    row-gap: 2%;
+    column-gap: 2%;
+}
+.modal__main .interface1 label{
+    /*display: inline-grid;*/
+    grid-template: fit-content(200px) / auto;
+    /*background-color: rgba(154, 205, 50, 0.2);*/
+    /*background-color: rgba(100, 149, 237, 0.1);*/
+    border-radius: .25rem;
+    padding: 2px 4px;
+}
+.modal__main  .interface1.bill{
+}
+.modal__main .interface1 .contract_info{
+    /*display: inline-grid;*/
+    grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+    align-content: center;
+}
+.contract_info > div{
+    padding: 2px 4px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    column-gap: 25px;
+}
+.contract_info > div:nth-child(odd){
+    background-color: rgba(100, 149, 237, 0.1);
+}
+.contract_info div div:nth-child(2){
+    text-align: right;
+}
+.modal__main .interface1 .bill{
+    background-color: rgba(100, 149, 237, 0.1);
+    grid-area: label;
+}
+.modal__main .interface1 .deposit_amount{
+    background-color: rgba(100, 149, 237, 0.1);
+    grid-area: deposit_amount;
+}
+.modal__main .interface1 .contract_info{
+    grid-area: contract_info;
+}
+.modal__main .interface1 .buttons{
+    grid-area: buttons;
+}
+.offers-wrapper .contract .buttons{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 12px;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+.offers-wrapper .bbtn{
+    color: black;
+    width: 130px;
+    height: 36px;
+    border-radius: 2rem;
+    border: 1px solid rgb(0,58,104);
+    padding: 5px;
+    cursor: pointer;
+}
+.offers-wrapper .bbtn:hover{
+    color: white;
+    background-color: rgb(0,58,104);
+}
+.best-offers .bold{
+    font-weight: bold;
+}
+@keyframes open_modal {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+@media screen and (max-width: 2560px){
+    .best-offers{
+        display: grid;
+        max-width: 1186px;
+        /*max-width: 1000px;*/
+    }
+    .best-offers__header{
+        margin: 16px;
+    }
+    .best-offers__main{
+        column-gap: 15px;
+        padding: 0 0 58px 0;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+@media screen and (max-width: 769px){
+    .best-offers__main{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
