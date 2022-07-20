@@ -10,8 +10,8 @@ $connect2=mysqli_connect(
     $mysql_user2,
     $mysql_password2,
     $mysql_database2);
-if ($connect->connect_error) {
-    die("Connection failed: " . $connect->connect_error);
+if ($connect2->connect_error) {
+    die("Connection failed: " . $connect2->connect_error);
 }
 function connectDB2($sql){
     global $connect2;
@@ -37,9 +37,9 @@ function marketing_offer($contract){
     if(!$contract[6] && !$expired){
         $full_bill = $contract[3] + $contract[4];
         $new_amount = $contract[4] + ($full_bill * ( rand($cd[0] * 10, $cd[1] * 10) / 1000));
-        connectDB("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
+        connectDB2("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
     }
-    if($expired){connectDB("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
+    if($expired){connectDB2("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
 }
 function marketing_offer_11($contract){
     $minmax_deposit = [1, 99];
@@ -49,9 +49,9 @@ function marketing_offer_11($contract){
     if(!$contract[6] && !$expired){
         $full_bill = $contract[3] + $contract[4];
         $new_amount = $contract[4] + (($full_bill * (( $cd ) / 100)) / 24);
-        connectDB("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
+        connectDB2("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
     }
-    if($expired){connectDB("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
+    if($expired){connectDB2("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
 }
 function marketing_offer_12($contract){
     $minmax_deposit = [100, 499];
@@ -61,9 +61,9 @@ function marketing_offer_12($contract){
     if(!$contract[6] && !$expired){
         $full_bill = $contract[3] + $contract[4];
         $new_amount = $contract[4] + (($full_bill * (( $cd ) / 100)) / 24);
-        connectDB("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
+        connectDB2("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
     }
-    if($expired){connectDB("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
+    if($expired){connectDB2("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
 }
 function marketing_offer_13($contract){
     $minmax_deposit = [500, 999];
@@ -73,9 +73,9 @@ function marketing_offer_13($contract){
     if(!$contract[6] && !$expired){
         $full_bill = $contract[3] + $contract[4];
         $new_amount = $contract[4] + (($full_bill * (( $cd ) / 100)) / 24);
-        connectDB("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
+        connectDB2("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
     }
-    if($expired){connectDB("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
+    if($expired){connectDB2("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
 }
 function marketing_offer_14($contract){
     $minmax_deposit = [1000, 4999];
@@ -85,9 +85,9 @@ function marketing_offer_14($contract){
     if(!$contract[6] && !$expired){
         $full_bill = $contract[3] + $contract[4];
         $new_amount = $contract[4] + (($full_bill * (( $cd ) / 100)) / 24);
-        connectDB("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
+        connectDB2("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
     }
-    if($expired){connectDB("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
+    if($expired){connectDB2("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
 }
 function marketing_offer_15($contract){
     $minmax_deposit = [5000, 9999999];
@@ -97,7 +97,7 @@ function marketing_offer_15($contract){
     if(!$contract[6] && !$expired){
         $full_bill = $contract[3] + $contract[4];
         $new_amount = $contract[4] + (($full_bill * (( $cd ) / 100)) / 24);
-        connectDB("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
+        connectDB2("UPDATE `wp_user_contrcts` SET `income`=".$new_amount." WHERE `id`=".$contract[0]);
     }
-    if($expired){connectDB("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
+    if($expired){connectDB2("UPDATE `wp_user_contrcts` SET `ended`=".true." WHERE `id`=".$contract[0]);}
 }
