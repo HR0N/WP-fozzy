@@ -10,8 +10,8 @@ $connect2=mysqli_connect(
     $mysql_user2,
     $mysql_password2,
     $mysql_database2);
-if ($connect->connect_error) {
-    die("Connection failed: " . $connect->connect_error);
+if ($connect2->connect_error) {
+    die("Connection failed: " . $connect2->connect_error);
 }
 function connectDB2($sql){
     global $connect2;
