@@ -20,7 +20,7 @@
                     requisites: this.select_wallets.val(),
                     amount: parseInt(this.find('#amount').val())};
                 this.ajax.insert_data(type, url, data);
-                setTimeout(()=>{location.reload();}, 200);
+                setTimeout(()=>{location.reload();}, 900);
             }
 
             events(){

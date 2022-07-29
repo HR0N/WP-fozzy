@@ -61,7 +61,7 @@
                 let data = {
                     reqid: id};
                 this.ajax.insert_data(type, url, data);
-                setTimeout(()=>{location.reload();}, 400);
+                setTimeout(()=>{location.reload();}, 900);
             }
             delete_req_withdraw(e){
                 let id = $(e.target).data('id');
@@ -70,7 +70,7 @@
                 let data = {
                     reqid: id};
                 this.ajax.insert_data(type, url, data);
-                setTimeout(()=>{location.reload();}, 400);
+                setTimeout(()=>{location.reload();}, 900);
             }
             change_bill(){
                 let type = 'GET',

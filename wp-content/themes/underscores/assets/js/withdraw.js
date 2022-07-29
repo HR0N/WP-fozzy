@@ -16,7 +16,7 @@
                     requisites: this.find('.requisites').val(),
                     amount: this.find('#amount').val()};
                 this.ajax.insert_data(type, url, data);
-                setTimeout(()=>{location.reload();}, 200);
+                setTimeout(()=>{location.reload();}, 900);
             }
 
             events(){
