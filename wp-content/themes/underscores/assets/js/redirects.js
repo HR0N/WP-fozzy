@@ -4,7 +4,7 @@
             constructor(elem) {
                 super($, elem);
                 this.href = location.href;
-                this.my_account = location.origin+'/my-account/my_account/';
+                this.my_account = location.origin+'/my-account/my_account';
 
                 this.home_redirect();
                 this.lobby_redirect();

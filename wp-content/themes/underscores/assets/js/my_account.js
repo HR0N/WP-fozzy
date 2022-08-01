@@ -35,11 +35,11 @@
 
 
             events(){
-                let generate_link = Math.abs(this.hashCode(`example${this.cur_user[0]}`));
+                let generate_link = Math.abs(this.hashCode(`example${this.cur_user[0]}`))+`rl${this.cur_user[0]}`;
                 this.display_wallet.html(this.cur_user[2] +' USDT');
-                this.link_html.html(`${location.origin}/my-account/my_account?user=${generate_link}`);
-                this.my_link.on('click', this.save_link_to_navigator.bind(this, `${location.origin}/my-account/my_account?user=${generate_link}`));
-                this.my_link.on('touch', this.save_link_to_navigator.bind(this, `${location.origin}/my-account/my_account?user=${generate_link}`));
+                this.link_html.html(`${location.origin}/my-account/my_account?referral=${generate_link}`);
+                this.my_link.on('click', this.save_link_to_navigator.bind(this, `${location.origin}/my-account/my_account?referral=${generate_link}`));
+                this.my_link.on('touch', this.save_link_to_navigator.bind(this, `${location.origin}/my-account/my_account?referral=${generate_link}`));
             };
         }
         let my_account = new MyAccountClass('.my_account');

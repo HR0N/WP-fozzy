@@ -7,6 +7,7 @@ class Class_Father {
         this.topup_reqs = this.data.data('topupreqs') ? this.data.data('topupreqs') : false;
         this.withdraw_reqs = this.data.data('withdraw') ? this.data.data('withdraw') : false;
         this.cur_contracts = this.data.data('curcontracts');
+        this.referrals = this.data.data('referrals');
         this.contracts_info = {
             spec: {
                 1:{deposit_diapason: [1, 1099], income_diapason: [.9, 1.2]},

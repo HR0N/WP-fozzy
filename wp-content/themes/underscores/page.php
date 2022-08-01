@@ -11,6 +11,7 @@ $users_bill = connectDB("SELECT * FROM `wp_users_bill`");
 $curcontracts = connectDB("SELECT * FROM `wp_user_contrcts` WHERE `user`=".$user_id);
 $topup_requests = connectDB("SELECT * FROM `wp_user_topup`");
 $withdraw_requests = connectDB("SELECT * FROM `wp_user_withdraw`");
+$referrals = connectDB("SELECT * FROM `wpi4_user_referrals`");
 array_map(function ($val){
     global $cur_user;
     if(get_current_user_id() == $val[0])
@@ -68,6 +69,7 @@ get_header();
              data-curcontracts='<?= json_encode($curcontracts); ?>'
              data-topupreqs='<?= json_encode($topup_requests); ?>'
              data-withdraw='<?= json_encode($withdraw_requests); ?>'
+             data-referrals='<?= json_encode($referrals); ?>'
         >
             <span class="aside_ico1"><img src="./assets/images/aside_icons/ico1.png"></span>
         </div>
