@@ -79,6 +79,9 @@ function init_validator(){
 function init_redirects(){
     wp_enqueue_script('redirects', get_template_directory_uri()."/assets/js/redirects.js");
 }
+function init_referral(){
+    wp_enqueue_script('referral', get_template_directory_uri()."/assets/js/referral.js");
+}
 
 add_action("wp_enqueue_scripts", 'init_fonts_style');
 add_action("wp_enqueue_scripts", 'init_menu_styles');
@@ -113,6 +116,7 @@ add_action("wp_footer", 'init_login_page_scripts');
 add_action("wp_footer", 'init_register_validation_scripts');
 add_action("wp_footer", 'init_validator');
 add_action("wp_footer", 'init_redirects');
+add_action("wp_footer", 'init_referral');
 
 
 

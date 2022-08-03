@@ -1,0 +1,44 @@
+.referral{}
+.referrals{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 100%));
+}
+.referrals .referral_line:nth-child(1){
+    padding-top: 10px;
+}
+.referrals .referral_line{
+    padding-bottom: 10px;
+
+}
+.referrals .referral_line h3{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.referral_line__info{
+    border: 1px solid white;
+    padding: 3px 6px;
+    display: grid;
+    row-gap: 5px;
+}
+.info-row{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.info-row .date{
+    color: #F2E467;
+}
+.info-row__date, .info-row__username, .info-row__referral{
+    text-transform: uppercase;
+}
+@media screen and (max-width: 769px){
+    .referrals{
+        font-size: .6em!important;
+    }
+}
+@media screen and (max-width: 426px){
+    .referrals{
+        font-size: .5em!important;
+    }
+}
