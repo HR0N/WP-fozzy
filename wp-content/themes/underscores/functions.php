@@ -500,7 +500,7 @@ function woocom_save_extra_register_fields($customer_id) {
     }
     if (isset($_GET["referral"])) {
         $parent_referral_id = explode('rl', $_GET["referral"])[1];
-        send_php_cl($parent_referral_id);
+//        send_php_cl($parent_referral_id);
         $sql = "INSERT INTO `wpi4_user_referrals`(`user_id`, `parent_referral_id`) 
                 VALUES (".$customer_id.", \"".$parent_referral_id."\")";
         $result = $connect->query($sql);
@@ -531,25 +531,3 @@ function login_redirect($redirect_to) {
 //        update_user_meta( $user_id, 'referral', trim( $_GET['referral'] ) );
 //    }
 //}
-function send_php_cl($msg){
-
-    $botToken="5591524736:AAGXk3kxgnGrjpIeMvhMM_toBda5NQVTLnQ";
-
-    $website="https://api.telegram.org/bot".$botToken;
-    $chatId='-718032249';  //** ===>>>NOTE: this chatId MUST be the chat_id of a person, NOT another bot chatId !!!**
-    $params=[
-        'chat_id'=>$chatId,
-        'text'=>'because this is php...',
-    ];
-    if($msg){
-        $params['text'] = $msg;
-    }
-    $ch = curl_init($website . '/sendMessage');
-    curl_setopt($ch, CURLOPT_HEADER, false);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, ($params));
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    $result = curl_exec($ch);
-    curl_close($ch);
-}

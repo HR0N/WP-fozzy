@@ -9,9 +9,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -22,9 +22,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -35,9 +35,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -48,9 +48,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -61,9 +61,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -74,9 +74,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -87,9 +87,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -100,9 +100,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -113,9 +113,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
@@ -126,9 +126,9 @@
                     <div class="info-row__date">Дата</div>
                     <div class="info-row__username">Имя пользователя</div>
                     <div class="info-row__referral">Реферал пользователя</div>
-                    <div class="info-row__date date">28.07.2022</div>
+                    <!--<div class="info-row__date date">28.07.2022</div>
                     <div class="info-row__username">EXAMPLE007</div>
-                    <div class="info-row__referral">-</div>
+                    <div class="info-row__referral">-</div>-->
                 </div>
             </div>
         </div>
