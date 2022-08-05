@@ -32,6 +32,12 @@
 .info-row__date, .info-row__username, .info-row__referral{
     text-transform: uppercase;
 }
+.referral_line{
+    display: none;
+}
+.referral_line:nth-child(1){
+    display: block;
+}
 @media screen and (max-width: 769px){
     .referrals{
         font-size: .6em!important;

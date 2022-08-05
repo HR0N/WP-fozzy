@@ -133,6 +133,6 @@
             </div>
         </div>
     </div>
-    <div class="not_finish_banner"></div>
+<!--    <div class="not_finish_banner"></div>-->
 </div>
 <?php
