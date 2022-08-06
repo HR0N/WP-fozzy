@@ -29,6 +29,9 @@
 .info-row .date{
     color: #F2E467;
 }
+.info-row div{
+    padding: 0 2px;
+}
 .info-row__date, .info-row__username, .info-row__referral{
     text-transform: uppercase;
 }
@@ -40,11 +43,9 @@
 }
 @media screen and (max-width: 769px){
     .referrals{
-        font-size: .6em!important;
+        font-size: .7em!important;
     }
-}
-@media screen and (max-width: 426px){
-    .referrals{
-        font-size: .5em!important;
+    .referral_line__info{
+        padding: 3px 2px;
     }
 }

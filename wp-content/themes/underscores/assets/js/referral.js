@@ -143,7 +143,9 @@
             line_append(line, title){
                 this.rendered_referrals[title].map((v, k)=>{
                     let date = v[3].split(' ')[0].split('-');
-                    date = `${date[2]}.${date[1]}.${date[0]}`;
+                    if(window.innerWidth < 425){
+                        date = `${date[2]}.${date[1]}`;
+                    }else{date = `${date[2]}.${date[1]}.${date[0]}`;}
                     $(this.lines[line]).append("<div class=\"info-row__date date\">"+date+"</div>");
                     $(this.lines[line]).append("<div class=\"info-row__username\">"+v[5]+"</div>");
                     $(this.lines[line]).append("<div class=\"info-row__referral\">"+v[4]+"</div>");

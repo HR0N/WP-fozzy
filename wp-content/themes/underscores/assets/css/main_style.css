@@ -43,9 +43,9 @@
 .woocommerce-notices-wrapper{
     display: none;
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 426px){
     .woocommerce-account .woocommerce-MyAccount-content{
-        padding: 1.5rem 6px 0;
+        padding: .5rem 6px 0;
         min-width: 250px;
     }
 }
